@@ -1,0 +1,61 @@
+@import '../../../styles/variables';
+
+.moon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 77px;
+
+  @media (min-width: $breakpoint-sm) {
+    height: 100%;
+    padding-top: 99px;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'abchanel-corpo';
+    text-align: center;
+    font-size: 1.5625rem; // 40px
+    margin-bottom: 9px;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 2.5rem; // 40px
+    }
+  }
+
+  &__description {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 0.875rem; // 14px
+    margin-bottom: 77px;
+
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: 99px;
+    }
+  }
+
+  &__image {
+    height: 792px;
+  }
+
+  &__parallax-wrapper-lg {
+    display: none;
+
+    @media (min-width: $breakpoint-sm) {
+      display: block;
+    }
+  }
+
+  &__parallax-wrapper-sm {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @media (min-width: $breakpoint-sm) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+@import '../../../styles/variables';
+
+.image-slider {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-family: 'abchanel-corpo';
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    place-items: center;
+
+    @media (min-width: $breakpoint-sm) {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin-top: 18px;
+
+    @media (min-width: $breakpoint-sm) {
+      height: 649px;
+      object-fit: cover;
+    }
+  }
+
+  &__caption {
+    max-width: 400px;
+  }
+
+  &__title {
+    font-size: 1.25rem; // 20px
+    margin-bottom: 9px;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 1.875rem; // 30px
+    }
+  }
+
+  &__text {
+    padding-bottom: 9px;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-family: 'Helvetica';
+    font-size: 0.875rem; // 14px
+    font-weight: 300;
+  }
+
+  &__slide {
+    display: none;
+    align-items: center;
+    text-align: center;
+
+    &--active {
+      display: grid;
+      place-items: center;
+
+      @media (min-width: $breakpoint-sm) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+      }
+    }
+  }
+
+  &__button {
+    height: 20px;
+    width: 20px;
+    border-bottom: 4px solid var(--secondary-color);
+    border-right: 4px solid var(--secondary-color);
+    border-top: transparent;
+    border-left: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+    &--left-lg {
+      display: none;
+
+      @media (min-width: $breakpoint-sm) {
+        border-bottom: 2px solid var(--secondary-color);
+        border-right: 2px solid var(--secondary-color);
+        display: block;
+        left: 10px;
+        transform: rotate(135deg);
+        position: absolute;
+      }
+    }
+
+    &--right-lg {
+      display: none;
+
+      @media (min-width: $breakpoint-sm) {
+        border-bottom: 2px solid var(--secondary-color);
+        border-right: 2px solid var(--secondary-color);
+        display: block;
+        right: 10px;
+        transform: rotate(-45deg);
+        position: absolute;
+      }
+    }
+
+    &--left-sm {
+      display: block;
+      left: 10px;
+      transform: rotate(135deg);
+      height: 20px;
+      width: 20px;
+      scale: 0.4;
+      margin-top: 2px;
+
+      @media (min-width: $breakpoint-sm) {
+        display: none;
+      }
+    }
+
+    &--right-sm {
+      display: block;
+      right: 10px;
+      transform: rotate(-45deg);
+      height: 20px;
+      width: 20px;
+      scale: 0.4;
+      margin-top: 2px;
+
+      @media (min-width: $breakpoint-sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__pagination {
+    font-family: 'abchanel-corpo';
+    font-size: 0.75rem; // 12px
+
+    @media (min-width: $breakpoint-sm) {
+      padding-top: 18px;
+    }
+  }
+
+  &__pagination-controls-sm {
+    margin-top: 18px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media (min-width: $breakpoint-sm) {
+      display: none;
+    }
+  }
+}

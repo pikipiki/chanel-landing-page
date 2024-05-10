@@ -1,0 +1,41 @@
+@import '/src/styles/variables';
+
+:root {
+  --primary-color: #f19b9e;
+  --secondary-color: #fff;
+  --main-bg-color: #000000;
+}
+
+html {
+  font-size: 16px; /* Now 1 rem equals 16px */
+  background-color: var(--main-bg-color);
+}
+
+body,
+figure,
+p {
+  margin: 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+p {
+  color: var(--secondary-color);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.app {
+  &__wrapper--sm {
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (min-width: $breakpoint-sm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

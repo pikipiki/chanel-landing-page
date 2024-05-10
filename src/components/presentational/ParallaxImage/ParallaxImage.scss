@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.parallax-image {
+  &__container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 396px;
+    width: 100%;
+
+    @media (min-width: $breakpoint-sm) {
+      height: 792px;
+      width: 668px;
+    }
+  }
+
+  &__picture {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    min-height: 100%;
+  }
+}

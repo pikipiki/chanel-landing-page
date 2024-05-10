@@ -1,0 +1,40 @@
+{
+  "sliderSection": {
+    "button_href": "https://www.google.com",
+    "button_title": "Découvrir la collection",
+    "itemOne_imageTitle": "PREMIÈRE ROCK PINK BLOSSOM",
+    "itemOne_imageDescription": "La PREMIERE ROCK ose le rose avec sa chaine en acier entrelacee de cuir pastel. En édition limitée.",
+    "itemOne_href": "https://www.google.com",
+    "itemOne_linkTitle": "DÉCOUVREZ",
+    "itemTwo_imageTitle": "Lorem ipsum",
+    "itemTwo_imageDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eleifend blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus",
+    "itemTwo_href": "https://www.google.com",
+    "itemTwo_linkTitle": "DÉCOUVREZ"
+  },
+  "heroSection": {
+    "title": "Go To The Moon",
+    "image_ariaLabel": "powerful girls"
+  },
+  "imageSlider": {
+    "root_ariaRoleDescription": "slide show",
+    "container_ariaLabel": "Previous slide",
+    "buttonRightLg_ariaLabel": "Next Slide",
+    "buttonLeftLg_ariaLabel": "Previous Slide",
+    "buttonRightSm_ariaLabel": "Next Slide",
+    "buttonLeftSm_ariaLabel": "Previous Slide",
+    "pagination_ariaLabel": "Pagination"
+  },
+  "lastSection": {
+    "button_href": "https://www.google.com",
+    "button_title": " TROUVEZ VOTRE BOUTIQUE",
+    "title": "DÉCOUVREZ LES PIÈCES EN BOUTIQUE",
+    "description": "Découvrer les nouvelles pièces dans votre boutique Chanel",
+    "note": "*Destination Lune",
+    "image_ariaLabel": "marie"
+  },
+  "moonSection": {
+    "image_ariaLabel": "woman",
+    "title": "Over the Moon*",
+    "description": "Quatre inconnus se rencontrent dans un ascenseur pour la Lune"
+  }
+}

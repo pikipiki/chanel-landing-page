@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+
+.slider-section {
+  text-align: center;
+  padding-top: 90px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 135px;
+  }
+
+  &__main-content {
+    display: flex;
+    width: 100%;
+    padding-bottom: 18px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 36px;
+
+    @media (min-width: $breakpoint-sm) {
+      padding-bottom: 63px;
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    width: 100%;
+  }
+}

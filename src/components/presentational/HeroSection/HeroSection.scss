@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+
+.hero-section {
+  &__container {
+    aspect-ratio: 16/9;
+    background-image: url('src/assets/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    max-height: 100vh; // for the title to remain above the fold
+    place-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  &__title--lg {
+    bottom: 72px;
+    color: var(--secondary-color);
+    font-family: 'abchanel-corpo';
+    font-size: 1.875rem; // 30 px
+    position: absolute;
+    display: none;
+
+    @media (min-width: $breakpoint-sm) {
+      display: block;
+    }
+  }
+
+  &__title--sm {
+    font-family: 'abchanel-corpo';
+    font-size: 1.25rem; // 20px
+    display: block;
+    padding-top: 18px;
+    text-align: center;
+
+    @media (min-width: $breakpoint-sm) {
+      display: none;
+    }
+  }
+}
